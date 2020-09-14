@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML | CSS Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header__img"> <img src="https://www.gslab.com/wp-content/uploads/2017/02/logo-1.jpg" alt=""> </div>
+        <div class="header__text">Text In Middle</div>
+        <div class="header__img"><img src="https://www.gslab.com/wp-content/uploads/2017/02/logo-1.jpg" alt=""> </div>
+    </div>
+    <div class="container">
+        <div class="img">
+            <div class="overlay"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <div id="showTime"></div>
+    </div>
+
+    <!-- Getting date from javascript not sure how to get USING ONLY HTML/CSS -->
+    <script type="text/javascript" language="javascript">
+            var date = new Date();
+            document.getElementById('showTime').innerHTML = `Current Date ${date.getDate()}/${date.getMonth()}/${date.getFullYear()}`;
+    </script>
+</body>
+</html>
